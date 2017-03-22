@@ -1,4 +1,4 @@
-FROM nginx:1.10.2
+FROM nginx:1.10.3-alpine
 MAINTAINER Kyle Mathews "mathews.kyle@gmail.com"
 
 RUN rm /etc/nginx/nginx.conf /etc/nginx/mime.types
@@ -15,4 +15,3 @@ COPY location /etc/nginx/location
 EXPOSE 80 443
 
 CMD ["nginx"]
-
